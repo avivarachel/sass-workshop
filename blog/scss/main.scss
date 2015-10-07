@@ -1,1 +1,70 @@
 // write your code here
+body {
+    background: linear-gradient(to bottom right, white, purple);
+}
+
+.main-header {
+    
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    &__title {
+        color: white;
+        text-shadow: 5px 5px rgba(255, 0, 255, 1);
+        font-size: 60px;
+    }
+    &__tagline {
+        color: white;
+        font-family: "Courier New";
+        font-size: 20px;
+        border: 2px solid white;
+    }
+}
+
+.article {
+    &__title {
+        color: black;
+        font-family: Verdana;
+        font-size: 40px;
+        text-align: center;
+    }
+    &__featured-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 10px double white;
+        
+        
+    }
+    p:first-letter {
+        display: block;
+        margin: 5px 0 0 5px;
+        float: left;
+        color: white;
+        font-size: 3.0em;
+        font-family: Georgia;
+    }
+    p {
+        font-family: Georgia;
+        text-align: justify;
+        line-height: 1.5;
+    }
+}
+
+.author-info {
+    &__image {
+        border-radius: 50%;
+        float: left;
+        margin-right: 1em;
+        opacity: 0.8;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    &__image:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+}
